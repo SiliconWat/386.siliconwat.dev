@@ -1,7 +1,7 @@
 const template = document.createElement("template");
 
 template.innerHTML = `
-    <link rel="stylesheet" href="components/tl-nav/shadow.css">
+    <link rel="stylesheet" href="/components/tl-header/shadow.css">
     <nav>
         <h3>Sitemap</h3>
         <ul>

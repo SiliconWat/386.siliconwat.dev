@@ -1,6 +1,6 @@
 import template from './template.mjs';
 
-class TlNav extends HTMLElement {
+class TlFooter extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
@@ -8,4 +8,4 @@ class TlNav extends HTMLElement {
     }
 }
 
-customElements.define("tl-nav", TlNav);
+customElements.define("tl-footer", TlFooter);
