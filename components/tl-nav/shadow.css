@@ -2,3 +2,10 @@
 	font-size: medium;
 }
 
+ul {
+	list-style-type: "→";
+}
+
+li {
+	padding-left: 10px;
+}
