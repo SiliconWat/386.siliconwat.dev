@@ -5,7 +5,7 @@ template.innerHTML = `
     <nav>
         <h3>Sitemap</h3>
         <ul>
-            <li><a href="/">Airbnb Superhost Consultant</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/monthly-earnings">My Monthly Earnings</a></li>
             <li><a href="/check-in-instructions">My Check-In Instructions</a></li>
             <li><a href="/scheduled-messages">My Scheduled Messages</a></li>
