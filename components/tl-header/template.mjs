@@ -3,7 +3,7 @@ const template = document.createElement("template");
 template.innerHTML = `
     <link rel="stylesheet" href="/components/tl-header/shadow.css">
     <nav>
-        <h3>Sitemap</h3>
+        <h3>Menu</h3>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/monthly-earnings">My Monthly Earnings</a></li>

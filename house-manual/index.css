@@ -2,6 +2,13 @@ html {
 	font-size: medium;
 }
 
+body {
+	max-width: 60vw;
+	margin: auto;
+	padding: 20px;
+	padding-bottom: 0;
+}
+
 img {
-	width: 90%;
+	width: 100%;
 }
