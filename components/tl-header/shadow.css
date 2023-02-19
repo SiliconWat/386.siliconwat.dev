@@ -2,10 +2,32 @@
 	font-size: medium;
 }
 
+nav {
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
 ul {
-	list-style-type: "→";
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	padding-top: 20px;
 }
 
 li {
 	padding-left: 10px;
+}
+
+@media (max-width: 480px) {
+	ul {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+	}
 }
