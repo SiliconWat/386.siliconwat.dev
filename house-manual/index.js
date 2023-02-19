@@ -1,6 +1,11 @@
 import "/components/tl-header/element.mjs";
 import "/components/tl-footer/element.mjs";
 
+document.querySelector('button').onclick = async event => {
+    await navigator.clipboard.writeText(event.target.previousElementSibling.value);
+    event.target.textContent = "Copied!";
+}
+
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
