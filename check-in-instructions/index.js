@@ -1,9 +1,6 @@
-import "/components/tl-header/element.mjs";
-import "/components/tl-footer/element.mjs";
 import instructions from "./instructions.mjs";
 
 window.onload = event => {
-    const fragment = document.createDocumentFragment();
     const article = document.querySelector('article');
 
     for (let i = 0; i < 20; i++) {
@@ -17,16 +14,12 @@ window.onload = event => {
         textarea.value = instructions[i];
         button.textContent = "Copy Text";
 
-        button.onclick = async event => {
-            await navigator.clipboard.writeText(textarea.value);
-            event.target.textContent = "Copied!";
-        }
+        button.onclick = window.copyText;
+        // button.onclick = async event => {
+        //     await navigator.clipboard.writeText(textarea.value);
+        //     event.target.textContent = "Copied!";
+        // }
 
         article.append(h2, img, textarea, button);
     }
-}
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LZ0S4CE49V');
+};

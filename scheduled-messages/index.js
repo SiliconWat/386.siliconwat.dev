@@ -1,12 +1,1 @@
-import "/components/tl-header/element.mjs";
-import "/components/tl-footer/element.mjs";
-
-document.querySelectorAll('button').forEach(button => button.onclick = async event => {
-    await navigator.clipboard.writeText(event.target.previousElementSibling.value);
-    event.target.textContent = "Copied!";
-});
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LZ0S4CE49V');
+window.onload = event => document.querySelectorAll('button').forEach(button => button.onclick = window.copyText);

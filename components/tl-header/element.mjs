@@ -14,6 +14,10 @@ class TlHeader extends HTMLElement {
     page(select) {
         document.location = select.value;
     }
+
+    menu(event) {
+        this.shadowRoot.querySelector('select').focus();
+    }
 }
 
 customElements.define("tl-header", TlHeader);

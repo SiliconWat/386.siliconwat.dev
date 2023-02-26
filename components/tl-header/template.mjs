@@ -10,7 +10,7 @@ template.innerHTML = `
         <li><a href="/house-manual">My House Manual</a></li>
     </ul>
     <nav>
-        <h3>Menu</h3> 
+        <h3 onclick="this.getRootNode().host.menu()">Menu</h3> 
         <select onchange="this.getRootNode().host.page(this)">
             <option value="/">Home</option>
             <option value="/monthly-earnings/"">My Monthly Earnings</option>

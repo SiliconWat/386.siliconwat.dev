@@ -2,6 +2,10 @@
 	font-size: medium;
 }
 
+h3 {
+	cursor: default;
+}
+
 nav {
 	display: none;
 	flex-direction: row;
