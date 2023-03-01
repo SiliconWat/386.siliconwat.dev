@@ -26,7 +26,7 @@ Thus on Wednesday nights, remember to move your car back to your side of the str
 
 Firstly, please give the screen door knob a little PUSH to make sure it is closed tightly.`,
 `1. Press the "Wake" button. You should hear a sound and the backlight will turn on.`,
-`2. Enter your access code:  9 5 9 5.  Each digit you press should light up and produce a sound.
+`2. Enter your access code:  1 2 1 2.  Each digit you press should light up and produce a sound.
 
 This one-time code will activate at 4pm on your check-in day, and will expire at 11am on your check-out day.`,
 `3. Press the "Unlock" button. You should hear the lock unwind.
