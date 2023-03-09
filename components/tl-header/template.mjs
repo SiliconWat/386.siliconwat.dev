@@ -18,6 +18,7 @@ template.innerHTML = `
             <option value="/scheduled-messages/">My Scheduled Messages</option>
             <option value="/house-manual/">My House Manual</option>
         </select>
+        <!--<button onclick="window.location.reload()">Refresh</button>-->
     </nav>
 `;
 
