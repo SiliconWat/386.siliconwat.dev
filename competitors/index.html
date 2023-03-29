@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Airbnb Price Stats</title>
+        <title>Competitors</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="/manifest.json">
         <link rel="icon" href="/386.png">
@@ -15,25 +15,28 @@
             <tl-header></tl-header>
         </header>
         <main>
-            <h1>Airbnb Price Stats</h1>
+            <h1>Competitors</h1>
             <section>
-                <select>
+                <select onchange="updateUrl(event)">
                     <option>Fresno, CA</option>
                     <option>Clovis, CA</option>
                 </select>
-                <select>
+                <select onchange="updateUrl(event)">
                     <option>Entire House</option>
                     <option>Guesthouse</option>
                 </select>
             </section>
+            <h3>Airbnb</h3>
             <ul>
-                <li><a href="https://www.airbnb.com/s/Fresno--California--United-States/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&price_filter_input_type=0&price_filter_num_nights=5&query=Fresno%2C%20CA&place_id=ChIJnU6eVOFdlIAREbijSWRAEns&date_picker_type=flexible_dates&flexible_trip_dates%5B%5D=march&adults=1&source=structured_search_input_header&search_type=filter_change&flexible_trip_lengths%5B%5D=weekend_trip" target="_blank">Weekday</a>: $0</li>
-                <li><a href="#" target="_blank">Weekend</a>: $0</li>
-                <li><a href="#" target="_blank">Week</a>: $0</li>
-                <li><a href="#" target="_blank">Month</a>: $0</li>
-                <li><a href="https://www.furnishedfinder.com/stats?ci=Fresno&st=California" target="_blank">Furnished Finder</a>: $0</li>
+                <li><a id="weekday" target="_blank">Weekday</a></li>
+                <li><a id="weekend" target="_blank">Weekend</a></li>
+                <li><a id="week" target="_blank">Week</a></li>
+                <li><a id="month" target="_blank">Month</a></li>
             </ul>
-            <button>Refresh</button>
+            <h3>Furnished Finder</h3>
+            <ul>
+                <li><a id="ff" target="_blank">Month</a></li>
+            </ul>
         </main>
         <footer>
             <tl-footer></tl-footer>
