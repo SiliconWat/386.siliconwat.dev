@@ -17,13 +17,14 @@
         <main>
             <h1>Competitors</h1>
             <section>
-                <select onchange="updateUrl(event)">
+                <select id="location" onchange="updateUrl(event)">
                     <option>Fresno, CA</option>
                     <option>Clovis, CA</option>
                 </select>
-                <select onchange="updateUrl(event)">
-                    <option>Entire House</option>
-                    <option>Guesthouse</option>
+                <select id="property" onchange="updateUrl(event)">
+                    <option>House</option>
+                    <option selected>Guesthouse</option>
+                    <option>Apartment</option>
                 </select>
             </section>
             <h3>Airbnb</h3>
@@ -36,6 +37,21 @@
             <h3>Furnished Finder</h3>
             <ul>
                 <li><a id="ff" target="_blank">Month</a></li>
+            </ul>
+            <br><hr><br>
+            <h3>Tom's Airbnb</h3>
+            <ul>
+                <li><a id="tom-weekday" target="_blank">Weekday</a></li>
+                <li><a id="tom-weekend" target="_blank">Weekend</a></li>
+                <li><a id="tom-week" target="_blank">Week</a></li>
+                <li><a id="tom-month" target="_blank">Month</a></li>
+            </ul>
+            <h3>H's Airbnb</h3>
+            <ul>
+                <li><a id="h-weekday" target="_blank">Weekday</a></li>
+                <li><a id="h-weekend" target="_blank">Weekend</a></li>
+                <li><a id="h-week" target="_blank">Week</a></li>
+                <li><a id="h-month" target="_blank">Month</a></li>
             </ul>
         </main>
         <footer>
