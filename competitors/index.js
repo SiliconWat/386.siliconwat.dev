@@ -13,25 +13,19 @@ const LOCATIONS = {
     }
 }
 
-const PROPERTIES = {
-    "House": 1,
-    "Guesthouse": 2,
-    "Apartment": 3
-}
-
 function updateAbnb() {
     const today = new Date();
     const location = LOCATIONS[document.getElementById('location').value];
-    const property = PROPERTIES[document.getElementById('property').value];
 
     const uri = `${'https://www.airbnb.com/s'}/${location.city}--${location.state}--${location.country}/homes?`;
     const query = new URLSearchParams();
     
+    query.set("room_types[]", "Entire home/apt");
+    query.set("l2_property_type_ids[]", document.getElementById('property').value);
+    query.set("adults", 1);
+
     query.set("date_picker_type", "flexible_dates");
     query.set("flexible_trip_dates[]", MONTHS[today.getMonth()]);
-    query.set("adults", 1);
-    query.set("room_types[]", "Entire home/apt");
-    query.set("l2_property_type_ids[]", property);
     
     query.set("flexible_trip_lengths[]", "weekend_trip");
     document.getElementById('weekend').href = uri + query.toString();
@@ -63,8 +57,8 @@ function render(name, uri) {
     const today = new Date();
     today.setMonth(today.getMonth() + 6);
     const query = new URLSearchParams();
-
     query.set("adults", 1);
+
     today.setDate(today.getDate() + (((5 + 7 - today.getDay()) % 7) || 7)); // Friday
     query.set("check_in", today.getFullDate());
     today.setDate(today.getDate() + 2); // Sunday
