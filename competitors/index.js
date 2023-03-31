@@ -10,6 +10,16 @@ const LOCATIONS = {
         city: "Clovis",
         state: "California",
         country: "United-States"
+    },
+    "Maui, HI": {
+        city: "Maui",
+        state: "Hawaii",
+        country: "USA"
+    },
+    "Srae Ambel, Cambodia": {
+        city: "Srae Ambel",
+        state: "Koh Kong Province",
+        country: "Cambodia"
     }
 }
 
