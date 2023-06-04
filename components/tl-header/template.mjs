@@ -10,6 +10,7 @@ template.innerHTML = `
         <li><a href="/check-in-instructions">My Check-In Instructions</a></li>
         <li><a href="/house-manual">My House Manual</a></li>
         <li><a href="/competitors">Competitors</a></li>
+        <li><a href="/housekeeping">Housekeeping</a></li>
     </ul>
     <nav>
         <h3 onclick="this.getRootNode().host.menu()">Menu</h3> 
@@ -21,6 +22,7 @@ template.innerHTML = `
             <option value="/check-in-instructions/">My Check-In Instructions</option>
             <option value="/house-manual/">My House Manual</option>
             <option value="/competitors/">Competitors</option>
+            <option value="/housekeeping/">Housekeeping</option>
         </select>
         <!--<button onclick="window.location.reload()">Refresh</button>-->
     </nav>

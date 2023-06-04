@@ -1,0 +1,1 @@
+window.onload = event => document.querySelector('button').onclick = window.copyText;
